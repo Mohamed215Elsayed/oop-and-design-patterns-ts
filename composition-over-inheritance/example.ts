@@ -1,28 +1,27 @@
-/**************************/
-/*  ❌ PROBLEM: Rigid Inheritance Hierarchy
-/**************************/
-/*
-abstract class DuckBad {
-    quack(): void {
-        console.log('Quack!');
-    }
+// /**************************/
+// /*  ❌ PROBLEM: Rigid Inheritance Hierarchy
+// /**************************/
+// abstract class DuckBad {
+//     quack(): void {
+//         console.log('Quack!');
+//     }
 
-    // If we put fly() here, EVERY duck flies — even RubberDuck!
-    fly(): void {
-        console.log('Flying...');
-    }
-}
+//     // If we put fly() here, EVERY duck flies — even RubberDuck!
+//     fly(): void {
+//         console.log('Flying...');
+//     }
+// }
 
-class MallardDuckBad extends DuckBad {
-    // Do any thing... flies normally, fine.
-}
+// class MallardDuckBad extends DuckBad {//بطه بريه
+//     // Do any thing... flies normally, fine.
+// }
 
-class RubberDuckBad extends DuckBad {
-    // ❌ Problem: RubberDuck now flies too — but a rubber duck can't fly!
-    // We'd have to override fly() to do nothing, which is a code smell,
-    // and breaks the Liskov Substitution Principle (LSP).
-}
-*/
+// class RubberDuckBad extends DuckBad {//بطه مطاطيه
+//     // ❌ Problem: RubberDuck now flies too — but a rubber duck can't fly!
+//     // We'd have to override fly() to do nothing, which is a code smell,//جود خلل في الكود،
+//     // and breaks the Liskov Substitution Principle (LSP).
+// }
+
 /**************************/
 /*  ✅ SOLUTION: Composition over Inheritance
 /**************************/
